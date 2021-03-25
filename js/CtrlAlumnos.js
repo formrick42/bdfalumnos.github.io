@@ -13,7 +13,7 @@ import {
 /** @type {HTMLUListElement} */
 const lista = document.
   querySelector("#lista");
-const daoPasatiempo =
+const daoAlumno =
   getFirestore().
     collection("Alumno");
 
@@ -50,7 +50,7 @@ function htmlLista(snap) {
   } else {
     html += /* html */
       `<li class="vacio">
-        -- No hay pasatiempos
+        -- No hay alumnos
         registrados. --
       </li>`;
   }
